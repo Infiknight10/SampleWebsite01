@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+
+  </style>
+  <script>
+function showPubg(pubgele) {
+   document.getElementById('Pubg').style.display = "block";
+   document.getElementById('Dota').style.display = "none";
+   document.getElementById('answer').style.display = "block";
+   document.getElementById('Tod').style.display = "none";
+   document.getElementById('Cs').style.display = "none";
+   document.getElementById('prse').innerHTML = pubgele.value;
+   pubgele.style.backgroundColor="#9aeaea";
+   
+}
+function showDota(dotaele) {
+   document.getElementById('Dota').style.display = "block";
+   document.getElementById('Pubg').style.display = "none";
+   document.getElementById('answer').style.display = "block";
+   document.getElementById('Tod').style.display = "none";
+   document.getElementById('Cs').style.display = "none";
+   document.getElementById('prse').innerHTML = dotaele.value;
+   dotaele.style.backgroundColor="#9aeaea";
+}
+function showCs(csele) {
+   document.getElementById('Cs').style.display = "block";
+   document.getElementById('Dota').style.display = "none";
+   document.getElementById('Pubg').style.display = "none";
+   document.getElementById('Tod').style.display = "none";
+   document.getElementById('answer').style.display = "block";
+   document.getElementById('prse').innerHTML = csele.value;
+   dotaele.style.backgroundColor="#9aeaea";
+}
+function showTod(todele) {
+   document.getElementById('Tod').style.display = "block";
+   document.getElementById('Cs').style.display = "none";
+   document.getElementById('Dota').style.display = "none";
+   document.getElementById('Pubg').style.display = "none";
+   document.getElementById('answer').style.display = "block";
+   document.getElementById('prse').innerHTML = todele.value;
+   dotaele.style.backgroundColor="#9aeaea";
+}
+function submitButtonStyle(_this) {
+  _this.style.backgroundColor = "#9aeaea";
+  a=_this.value;
+  document.getElementById('stse').innerHTML = a;
+  
+}
+</script>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Page</h1>
+  
+</div>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Games</a>
+ 
+  <div class=" navbar" id="Navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <input type="button" class="btn btn-info" name="Pubg" onclick="showPubg(this)" value="Pubg" style="margin:5px;background-color:white;color:black;">
+      </li>
+      <li class="nav-item">
+        <input type="button" class="btn btn-info" name="Dota" onclick="showDota(this)" value="Dota" style="margin:5px;background-color:white;color:black;">
+      </li>
+      <li class="nav-item">
+        <input type="button" class="btn btn-info" name="Cs" onclick="showCs(this)" value="Cs" style="margin:5px;background-color:white;color:black;">
+      </li> 
+	  <li class="nav-item">
+        <input type="button" class="btn btn-info" name="Tod" onclick="showTod(this)" value="Tod" style="margin:5px;background-color:white;color:black;">
+      </li>  	  
+    </ul>
+  </div>  
+</nav>
+
+
+<div class="row">
+<div id="Pubg"  style="display:none;" class="col-6">
+  <h2>Steps</h2>
+ 
+
+    <div >
+      
+        <button class="btn btn-info" name="1.Make a squad" onclick="submitButtonStyle(this)" value="1.Make a squad" style="margin:5px;background-color:white;color:black;">1.Make a squad</button>
+      
+    </div>
+    <div>
+     
+         <button class="btn btn-info" name="2.Decide a place" onclick="submitButtonStyle(this)" value="2.Decide a place" style="margin:5px;background-color:white;color:black;">2.Decide a place</button>
+
+      
+    </div>
+    <div>
+      
+        <button class="btn btn-info" name="3.Get guns" onclick="submitButtonStyle(this)" value="3.Get guns" style="margin:5px;background-color:white;color:black;">3.Get guns</button>
+
+      
+    </div>
+	<div>
+     
+        <button class="btn btn-info" name="4.Safe in region" onclick="submitButtonStyle(this)" value="4.Safe in region" style="margin:5px;background-color:white;color:black;">4.Safe in region</button>
+
+
+    </div>
+	<div>
+      
+        <button class="btn btn-info" name="5.Chicken dinner" onclick="submitButtonStyle(this)" value="5.Chicken dinner" style="margin:5px;background-color:white;color:black;">5.Chicken dinner</button>
+     
+    </div>
+  
+  </div>
+  
+  
+  <div id="Dota"  style="display:none;" class="col-6">
+  <h2>Steps</h2>
+ 
+  
+    <div>
+      
+       <button class="btn btn-info" name="1.Game finding" onclick="submitButtonStyle(this)" value="1.Game finding" style="margin:5px;background-color:white;color:black;">1.Game finding</button>
+
+      
+    </div>
+    <div>
+     
+       <button class="btn btn-info" name="2.Hero selection" onclick="submitButtonStyle(this)" value="2.Hero selection" style="margin:5px;background-color:white;color:black;">2.Hero selection</button>
+
+      
+    </div>
+    <div>
+      
+        <button class="btn btn-info" name="3.Farm" onclick="submitButtonStyle(this)" value="3.Farm" style="margin:5px;background-color:white;color:black;">3.Farm</button>
+
+     
+    </div>
+	<div>
+      
+        <button class="btn btn-info" name="4.Fight" onclick="submitButtonStyle(this)" value="4.Fight" style="margin:5px;background-color:white;color:black;">4.Fight</button>
+      
+    </div>
+	<div>
+      
+        <button class="btn btn-info" name="5.Win" onclick="submitButtonStyle(this)" value="5.Win" style="margin:5px;background-color:white;color:black;">5.Win</button>
+      
+    </div>
+    
+  
+  </div>
+  
+  
+  <div id="Cs"  style="display:none;" class="col-6">
+  <h2>Steps</h2>
+ 
+ 
+    <div>
+	
+         <button class="btn btn-info" name="1.Select a team" onclick="submitButtonStyle(this)" value="1.Select a team" style="margin:5px;background-color:white;color:black;">1.Select a team</button>
+      
+    </div>
+    <div>
+
+         <button class="btn btn-info" name="2.Attack" onclick="submitButtonStyle(this)" value="2.Attack" style="margin:5px;background-color:white;color:black;">2.Attack</button>
+     
+    </div>
+    <div>     
+         <button class="btn btn-info" name="3.Win" onclick="submitButtonStyle(this)" value="3.Win" style="margin:5px;background-color:white;color:black;">3.Win</button>
+     
+    </div>
+    
+  
+  </div>
+  
+  
+  <div id="Tod"  style="display:none;" class="col-6">
+  <h2>Steps</h2>
+ 
+  
+    <div>
+	
+         <button class="btn btn-info" name="1.Chill" onclick="submitButtonStyle(this)" value="1.Chill" style="margin:5px;background-color:white;color:black;">1.Chill</button>
+      
+    </div>
+    <div>
+	
+        <button class="btn btn-info" name="2.Repeat" onclick="submitButtonStyle(this)" value="2.Repeat" style="margin:5px;background-color:white;color:black;">2.Repeat	</button>
+		
+    </div>
+   
+  </div>
+  
+  
+  
+  <div id="answer" style="display:none;" class="col-6">
+  <h3>Display</h3>
+  <br>
+  <h5 style="display:inline" >Process Selected:</h5><p style="display:inline" id="prse"></p> <br>
+  
+   <h5 style="display:inline">Step Selected:</h5><p style="display:inline" id="stse"></p>
+   </div>
+  
+  
+</div>
+
+
+
+</body>
+</html>
